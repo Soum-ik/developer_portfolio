@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "font-family": ["Raleway", "sans-serif"],
+        Ralewaye: ["Raleway", "sans-serif"],
       },
       colors :{
         bgColor : "#090E16",

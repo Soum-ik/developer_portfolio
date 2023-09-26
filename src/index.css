@@ -1,6 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,700&display=swap"); */
+@layer base {
+  * {
+    @apply font-Ralewaye;
+  }
+  .container {
+    @apply relative w-full mr-auto ml-auto pr-[12px] pl-[12px] xl:max-w-[1265px] xl:pl-[13rem] xl:pr-[13rem] xl:max-w-[1280px] xl:pl-[5rem] xl:pr-[5rem] lg:max-w-[1024px] lg:pl-[45px] lg:pr-[45px] md:max-w-[768px] md:pl-[15px] md:pr-[15px];
+  }
+  .section {
+    @apply py-[50px] md:py-[80px] max-w-[1145px] px-8 lg:px-0 mx-auto;
+  }
+}
 
+@layer components {
+  .C_box {
+    /* px-6 mx-auto md:px-12 py-8 max-w-screen-md */
+    @apply text-white border-mainColor md:border-t border-opacity-30;
+  }
+  .sing {
+    @apply w-[122px] rounded-md text-center justify-center text-mainColor p-1 bg-mainColor bg-opacity-10 font-medium;
+  }
+}
+
+@layer utilities {
+  .sing {
+    @apply w-[122px] rounded-md text-center justify-center text-mainColor p-1 bg-mainColor bg-opacity-10 font-medium;
+  }
+  .Tittle{
+    @apply  py-4 text-white text-4xl font-extrabold line-clamp-3;
+  }
+}

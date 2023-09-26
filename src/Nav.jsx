@@ -14,15 +14,13 @@ import Home from "./pages/Home";
 export default function Nav() {
   return (
     <>
-      <div className="mx-8 py-7">
+      <div className="mx-8 pt-7">
         <div className="flex items-center justify-center space-x-4 text-cyan-50  text-2xl duration-1000 transition-opacity mb-8">
           <BsGithub className="opacity-30 hover:opacity-75" />
           <BsFacebook className="opacity-30 hover:opacity-75" />
           <FaInstagram className="opacity-30 hover:opacity-75" />
         </div>
       </div>
-
-      <Home/>
     </>
   );
 }
