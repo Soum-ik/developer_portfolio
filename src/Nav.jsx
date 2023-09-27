@@ -1,54 +1,74 @@
-import React from "react";
-import { BsFacebook, BsGithub } from "react-icons/bs";
-import { FaInstagram } from "react-icons/fa";
-import { BiSolidCloudDownload } from "react-icons/bi";
-import logoImg from "../src/img/Component1.png";
-import { BsWhatsapp } from "react-icons/bs";
-import Home from "./pages/Home";
-import { NavLink } from "react-router-dom";
-import logo from "../src/img/logo.svg"
+import React, { useState } from "react";
+import logo from "../src/img/logo.svg";
+import { useEffect } from "react";
 
-const navItems = [
-  {
-    name: "Home",
-    id: 1,
-  },
-  {
-    name: "About me",
-    id: 2,
-  },
-  {
-    name: "Projects ",
-    id: 3,
-  },
-  {
-    name: "Recomanded",
-    id: 4,
-  },
-  {
-    name: "Contact",
-    id: 5,
-  },
-];
-
-/**
- *
- *
- * @export
- * @return {*}
- */
 export default function Nav() {
+  const [width, setWidth] = useState(false);
+
+  useEffect(() => {
+    if (window.innerWidth > 768) {
+      setWidth(false);
+    }
+  }, [width]);
+
+  console.log(width);
+
+  const manus = [
+    {
+      id: 1,
+      name: "Home",
+      link: "/",
+    },
+    {
+      id: 2,
+      name: "About",
+      link: "/about",
+    },
+    {
+      id: 3,
+      name: "Skill",
+      link: "/skill",
+    },
+    {
+      id: 4,
+      name: "Projects",
+      link: "/projects",
+    },
+    {
+      id: 5,
+      name: "Resume",
+      link: "/resume",
+    },
+    {
+      id: 6,
+      name: "Contact",
+      link: "/contact",
+    },
+  ];
+
   return (
     <>
       <div className="mx-10 pt-3 text-cyan-50">
-        <nav className=" bg-mainColor/10 w-full h-auto py-3 rounded-xl px-3">
+        <nav
+          className={` backdrop-blur-2xl bg-mainColor/10 w-full h-auto py-3 rounded-xl px-3 `}
+        >
           <div className=" flex justify-between items-center px-7">
             <div>
               <img src={logo} alt="" />
             </div>
-            <div>
-              
-              <h1>Hh</h1>
+            <div className=" flex items-center ">
+              <div className=" hidden md:block">
+                <ul className="flex space-x-8">
+                  {manus.map((manu) => (
+                    <div
+                      key={manu.id}
+                      className=" first:text-mainColor opacity-50 hover:opacity-100 duration-500 cursor-pointer selection:select-none"
+                    >
+                      <li className="">{manu.name}</li>
+                    </div>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </nav>
@@ -56,14 +76,3 @@ export default function Nav() {
     </>
   );
 }
-// //width: 122px;
-// height: 32px;
-// flex-shrink: 0;
-
-// <div className="mx-8 pt-7">
-//   <div className="flex items-center justify-center space-x-4 text-cyan-50  text-2xl duration-1000 transition-opacity mb-8">
-//     <BsGithub className="opacity-30 hover:opacity-75" />
-//     <BsFacebook className="opacity-30 hover:opacity-75" />
-//     <FaInstagram className="opacity-30 hover:opacity-75" />
-//   </div>
-// </div>
