@@ -20,16 +20,13 @@
     /* px-6 mx-auto md:px-12 py-8 max-w-screen-md */
     @apply text-white border-mainColor md:border-t border-opacity-30;
   }
-  .sing {
-    @apply w-[122px] rounded-md text-center justify-center text-mainColor p-1 bg-mainColor bg-opacity-10 font-medium;
-  }
 }
 
 @layer utilities {
   .sing {
-    @apply w-[122px] rounded-md text-center justify-center text-mainColor p-1 bg-mainColor bg-opacity-10 font-medium;
+    @apply max-w-fit rounded-md text-center justify-center text-mainColor  bg-mainColor bg-opacity-10 font-medium px-2 py-2;
   }
-  .Tittle{
-    @apply  py-4 text-white text-4xl font-extrabold line-clamp-3;
+  .Tittle {
+    @apply py-4 text-white text-4xl font-extrabold line-clamp-3;
   }
 }

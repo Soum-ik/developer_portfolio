@@ -24,10 +24,13 @@ export default function Expreience() {
     },
   ];
 
+  console.log(experiences);
+
   return (
-    <div className="container C_box">
-      <div className="section gap-4">
-        <div className=" max-w-md grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 space-y-3">
+    // C_box
+    <div className="container ">
+      <div className="section">
+        <div className=" max-w-md grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 space-y-3 gap-8">
           {experiences.map((experience, index) => (
             <div className="border border-mainColor border-opacity-20 hover:shadow-2xl hover:border-white duration-1000 transition-colors shadow-mainColor rounded-xl px-10 py-10 flex items-center justify-center flex-col last:bg-mainColor last:bg-opacity-10 space-x-2" key={index}>
               <img src={experience.Image} alt="" />
@@ -36,7 +39,6 @@ export default function Expreience() {
             </div>
           ))}
         </div>
-        {/*  */}
       </div>
     </div>
   );
