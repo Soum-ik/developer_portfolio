@@ -1,16 +1,17 @@
-import Nav from "./Nav";
-import About from "./about";
-import Expreience_Buttom from "./components/experience/experience";
-import Moblie_nav from "./components/moblie-nav/moblie";
-import Expreience from "./experience";
-// import Home from "./pages/Home";
-import Project from "./project";
+import Nav from "./components/moblie-nav/Nav";
+import About from "./components/about";
+import Expreience from "./components/experience/experiences_ALl";
+import Project from "./components/project";
+import Hero from "./components/hero";
 
 export default function App() {
   return (
     <div className=" bg-bgColor h-auto min-h-screen">
+      <Nav />
+      <Hero />
       <Expreience/>
-      <Expreience_Buttom/>
+      <About />
+      <Project/>
     </div>
   );
 }

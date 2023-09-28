@@ -21,18 +21,14 @@
 }
 
 @layer utilities {
-  .C_box {
-    /* px-6 mx-auto md:px-12 py-8 max-w-screen-md */
-    @apply text-white border-mainColor md:border-t border-opacity-30;
-  }
+  
   .sing {
-    @apply max-w-fit rounded-md text-center justify-center text-mainColor  bg-mainColor bg-opacity-10 font-medium px-2 py-2;
+    @apply max-w-fit rounded-md text-center justify-center text-mainColor   bg-mainColor bg-opacity-10 font-medium px-3 py-2;
   }
   .Tittle {
-    @apply py-4 text-white text-4xl font-extrabold line-clamp-3;
+    @apply py-4 text-white text-5xl font-extrabold line-clamp-3;
   }
-  .grid {
-    /* px-6 mx-auto md:px-12 py-8 max-w-screen-md */
-    @apply text-white border-mainColor md:border-t border-opacity-30;
+  .custom_Grid{
+    @apply grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:space-y-0 space-y-3 gap-8
   }
 }

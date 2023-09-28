@@ -1,8 +1,8 @@
-import Button from "../buttom/Buttom";
+import Button from "../../buttom/Buttom";
 // import { Contents } from "../Card/card_content";
-import img from "../img/ss.png";
-import img1 from "../img/ss1.png";
-import img2 from "../img/ss3.png";
+import img from "../../img/ss.png";
+import img1 from "../../img/ss1.png";
+import img2 from "../../img/ss3.png";
 
 export default function Card({ btn1, btn2 }) {
   const Contents = [
@@ -28,7 +28,7 @@ export default function Card({ btn1, btn2 }) {
 
   return (
     <div className="pt-6 rounded-lg ">
-      <div className=" grid place-content-center md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4 ">
+      <div className=" grid  md:grid-cols-2 lg:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-5 ">
         {Contents.map((content) => (
           <div
             key={content.id}
