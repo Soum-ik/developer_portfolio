@@ -17,7 +17,7 @@ export default function Project() {
           <div>
             <p className="Tittle first-letter:odd:text-mainColor">Project</p>
           </div>
-          <div className=" space-x-4 md:hidden">
+          <div className=" md:space-x-4 flex-wrap md:hidden">
             <Button children="UI DEGINER" />
             <Button bg="color"  children="API" />
             <Button children="SERVER" />
