@@ -43,8 +43,8 @@ export default function Card({ btn1, btn2 }) {
 
             <div className="">
               <div className="space-x-3 my-3 text-xs">
-                <Button props>{btn1}</Button>
-                <Button props>{btn2}</Button>
+                <Button>{btn1}</Button>
+                <Button >{btn2}</Button>
               </div>
               <div>
                 <img className=" rounded-md" src={content.Image} alt="" />

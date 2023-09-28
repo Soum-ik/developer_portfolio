@@ -15,10 +15,6 @@
   }
 }
 
-@layer components {
-  
-  
-}
 
 @layer utilities {
   
@@ -29,6 +25,9 @@
     @apply py-4 text-white text-5xl font-extrabold line-clamp-3;
   }
   .custom_Grid{
-    @apply grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:space-y-0 space-y-3 gap-8
+    @apply grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:space-y-0  gap-8
+  }
+  .custom_Blur{
+    @apply  w-48 rounded-3xl h-48 bg-mainColor/5 filter blur-3xl ;
   }
 }

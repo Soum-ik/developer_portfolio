@@ -29,10 +29,9 @@ export default function Expreience() {
 
 
   return (
-    // C_box
     <div className="container">
       <div className="section C_box">
-        <div className=" grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:space-y-0 space-y-3 md:gap-14">
+        <div className=" custom_Grid">
           {experiences.map((experience, index) => (
             <div
               className="border border-mainColor border-opacity-20 hover:shadow-2xl hover:border-white hover:text-white text-white/50 duration-1000 transition-colors shadow-mainColor rounded-xl px-10 py-10 flex items-center justify-center flex-col last:bg-mainColor last:bg-opacity-10 space-x-2"

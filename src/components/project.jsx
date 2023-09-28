@@ -14,9 +14,9 @@ export default function Project() {
           <div>
             <p className="Tittle first-letter:odd:text-mainColor">Project</p>
           </div>
-          <div className=" flex gap-4 ">
+          <div className=" space-x-4 md:hidden">
             <Button children="UI DEGINER" />
-            <Button props="special" children="API" />
+            <Button bg="color"  children="API" />
             <Button children="SERVER" />
           </div>
         </div>
