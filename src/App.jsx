@@ -2,6 +2,7 @@
 import { Routes, Route } from "react-router-dom";
 import Recomandation from "./components/recomandation";
 import Home from "./pages/Home";
+import ProejectPage from "./pages/Project";
 
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
 
 
         <Route path="/" element={<Home  />}/>
+        <Route path="/projects" element={<ProejectPage  />}/>
       </Routes>
     </div>
   );
