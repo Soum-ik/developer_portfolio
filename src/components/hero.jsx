@@ -22,7 +22,9 @@ export default function Hero() {
               <p>Here is My CV</p>
               <BsDownload />
             </div>
-            <div className="flex space-x-4 items-center justify-end"></div>
+            <div className="flex space-x-4 items-center justify-end">
+              
+            </div>
           </div>
         </div>
       </div>
