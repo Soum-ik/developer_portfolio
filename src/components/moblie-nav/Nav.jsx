@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../img/Logo.svg";
+import { Link } from "react-router-dom";
 
 import { AiOutlineAlignRight } from "react-icons/ai";
 import { GrClose } from "react-icons/gr";
@@ -58,12 +59,13 @@ export default function Nav() {
               <div className=" hidden md:block">
                 <ul className="flex space-x-8">
                   {manus.map((manu) => (
-                    <div
+                    <Link
+                      to={manu.link}
                       key={manu.id}
                       className=" first:text-mainColor opacity-50 hover:opacity-100 duration-500 cursor-pointer selection:select-none"
                     >
                       <li className="">{manu.name}</li>
-                    </div>
+                    </Link>
                   ))}
                 </ul>
               </div>
@@ -93,14 +95,14 @@ export default function Nav() {
                 : ` hidden`
             }
           >
-            <div className=" ease-in-out md:hidden duration-700 bg-mainColor w-full">
+            <div className=" ease-in-out md:hidden duration-700 bg-mainColor w-full z-50">
               <ul className="flex flex-col space-y-4 mx-6 my-10 ">
                 {manus.map((manu) => (
                   <div
                     key={manu.id}
                     className=" first:text-white opacaity-100  hover:opacity-100 duration-500 cursor-pointer selection:select-none"
                   >
-                    <li className="">{manu.name}</li>
+                    <li className="">{manu.name}</li> 
                   </div>
                 ))}
               </ul>
