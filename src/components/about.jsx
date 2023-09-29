@@ -6,7 +6,7 @@ export default function About() {
       <div className="section grid grid-cols-1 md:grid-cols-2 gap-5 only:md:gap-12">
         <div className=" flex items-center justify-center relative">
           <img src={img} className="w-80" alt="" />
-          <div className=" absolute bg-mainColor opacity-10 w-96 h-96  rounded-full  filter blur-3xl"></div>
+          <div className=" absolute bg-mainColor opacity-10 sm:w-96 sm:h-96  rounded-full  filter blur-3xl"></div>
         </div>
         <div className="">
           <p className="sing">🧐 About me</p>

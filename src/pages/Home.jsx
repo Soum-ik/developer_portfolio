@@ -1,5 +1,7 @@
 import About from "../components/about";
+import Contact from "../components/contact";
 import Expreience from "../components/experience/experiences_ALl";
+import Last from "../components/footer";
 import Hero from "../components/hero";
 import Nav from "../components/moblie-nav/Nav";
 import Project from "../components/project";
@@ -18,6 +20,8 @@ export default function Home() {
       <Project/>
       <Technology/>
       <Recomandation/>
+      <Contact/>
+      <Last/>
     </>
   );
 }
