@@ -1,10 +1,11 @@
 import { AiOutlineLink } from "react-icons/ai";
 import Card from "../components/Card/card";
 import Button from "../buttom/Buttom";
+import Transtion from "./motion/motion";
 
-export default function Project() {
+const Project= () => {
   return (
-    <div className="pb-9 px-8 md:container">
+    <div className="pb-9 px-8 md:container pt-10">
       <div className=" space-y-5">
         <div className="sing  flex items-center gap-1 justify-center py-1">
           <AiOutlineLink className=" hover:bg-mainColor/10 duration-500 rounded-xl hover:w-6 hover:h-5 hover:p-1" />
@@ -17,11 +18,11 @@ export default function Project() {
           <div>
             <p className="Tittle first-letter:odd:text-mainColor">Project</p>
           </div>
-          <div className=" space-x-4 md:hidden">
+          {/* <div className=" md:space-x-4 flex-wrap md:hidden">
             <Button children="UI DEGINER" />
             <Button bg="color"  children="API" />
             <Button children="SERVER" />
-          </div>
+          </div> */}
         </div>
 
         <div className=" px-5 ">
@@ -31,3 +32,6 @@ export default function Project() {
     </div>
   );
 }
+
+
+export default Project;

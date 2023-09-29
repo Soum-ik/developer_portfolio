@@ -47,7 +47,7 @@ export default function Card({ btn1, btn2 }) {
                 <Button >{btn2}</Button>
               </div>
               <div>
-                <img className=" rounded-md" src={content.Image} alt="" />
+                <img className=" rounded-md object-contain" src={content.Image} alt="" />
               </div>
             </div>
           </div>

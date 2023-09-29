@@ -60,7 +60,7 @@ export default function Nav() {
                 <ul className="flex space-x-8">
                   {manus.map((manu) => (
                     <Link
-                      to="#te"
+                      to={manu.link}
                       key={manu.id}
                       className=" first:text-mainColor opacity-50 hover:opacity-100 duration-500 cursor-pointer selection:select-none"
                     >
@@ -102,7 +102,7 @@ export default function Nav() {
                     key={manu.id}
                     className=" first:text-white opacaity-100  hover:opacity-100 duration-500 cursor-pointer selection:select-none"
                   >
-                    <li className="">{manu.name}</li>
+                    <li className="">{manu.name}</li> 
                   </div>
                 ))}
               </ul>
