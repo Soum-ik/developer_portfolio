@@ -17,11 +17,11 @@ export default function Project() {
           <div>
             <p className="Tittle first-letter:odd:text-mainColor">Project</p>
           </div>
-          <div className=" md:space-x-4 flex-wrap md:hidden">
+          {/* <div className=" md:space-x-4 flex-wrap md:hidden">
             <Button children="UI DEGINER" />
             <Button bg="color"  children="API" />
             <Button children="SERVER" />
-          </div>
+          </div> */}
         </div>
 
         <div className=" px-5 ">

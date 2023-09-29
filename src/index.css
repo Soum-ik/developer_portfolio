@@ -22,7 +22,7 @@
     @apply max-w-fit rounded-md text-center justify-center text-mainColor   bg-mainColor bg-opacity-10 font-medium px-3 py-2;
   }
   .Tittle {
-    @apply py-4 text-white text-5xl font-extrabold line-clamp-3;
+    @apply py-4 text-white md:text-5xl text-3xl font-extrabold line-clamp-3;
   }
   .custom_Grid{
     @apply grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:space-y-0  gap-8

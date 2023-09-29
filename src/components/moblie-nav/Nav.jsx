@@ -102,7 +102,7 @@ export default function Nav() {
                     key={manu.id}
                     className=" first:text-white opacaity-100  hover:opacity-100 duration-500 cursor-pointer selection:select-none"
                   >
-                    <li className="">{manu.name}</li>
+                    <li className="">{manu.name}</li> 
                   </div>
                 ))}
               </ul>
