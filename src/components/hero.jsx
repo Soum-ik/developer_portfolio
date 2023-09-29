@@ -2,6 +2,8 @@ import Transtion from "./motion/motion";
 import { BsDownload, BsWhatsapp } from "react-icons/bs";
 import logo from "../img/Component1.png";
 import Moblie_item from "./moblie-nav/moblie";
+import WhatsAppLink from "./Card/whats_Up";
+
 
 const Hero = () => {
   return (
@@ -19,7 +21,7 @@ const Hero = () => {
           <img src={logo} className="md:grow-[2] w-[400px]" alt="" />
           <div className=" grow text-mainColor/50 hidden md:block space-y-2">
             <div className="flex space-x-4 items-center justify-end ">
-              <p>Here is My CV</p>
+              <WhatsAppLink/>
               <BsDownload />
             </div>
             <div className="flex space-x-4 items-center justify-end"></div>
@@ -30,4 +32,4 @@ const Hero = () => {
   );
 };
 
-export default Transtion(Hero);
+export default Hero;

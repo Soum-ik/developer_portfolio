@@ -7,21 +7,23 @@ import Nav from "../components/moblie-nav/Nav";
 import Project from "../components/project";
 import Recomandation from "../components/recomandation";
 import Technology from "../components/tecnologys/Techonolgy";
-
-
+import { Route, Routes } from "react-router-dom";
+import { motion, useScroll } from "framer-motion";
 
 export default function Home() {
+  const {} = useScroll();
   return (
     <>
+
       <Nav />
       <Hero />
-      <Expreience/>
-      <About/>
-      <Project/>
-      <Technology/>
-      <Recomandation/>
-      <Contact/>
-      <Last/>
+      <Expreience />
+      <About />
+      <Project />
+      <Technology />
+      <Recomandation />
+      <Contact />
+      <Last />
     </>
   );
 }

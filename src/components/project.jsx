@@ -34,4 +34,4 @@ const Project= () => {
 }
 
 
-export default Transtion(Project)
+export default Project;
