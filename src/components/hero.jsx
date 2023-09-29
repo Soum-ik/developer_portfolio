@@ -1,9 +1,8 @@
-import Transtion from "./motion/motion";
-import { BsDownload, BsWhatsapp } from "react-icons/bs";
-import logo from "../img/Component1.png";
-import Moblie_item from "./moblie-nav/moblie";
-import WhatsAppLink from "./Card/whats_Up";
 
+import logo from "../img/Component1.png";
+import WhatsAppLink from "./Card/whats_Up";
+import Moblie_item from "./moblie-nav/moblie";
+import MyCV from "./Card/cv";
 
 const Hero = () => {
   return (
@@ -15,16 +14,18 @@ const Hero = () => {
             <h1 className="Tittle">Soumik Sarkar</h1>
             <p className="text-white/30 text-xl">Fontend Developer</p>
             <div className="hidden md:block md:-ml-[282px]">
+              {/* Here is my CV */}
               {<Moblie_item />}
             </div>
           </div>
           <img src={logo} className="md:grow-[2] w-[400px]" alt="" />
           <div className=" grow text-mainColor/50 hidden md:block space-y-2">
-            <div className="flex space-x-4 items-center justify-end ">
-              <WhatsAppLink/>
-              <BsDownload />
+            {/* <div className="flex space-x-4 items-center justify-end "> */}
+              <MyCV />
+              
+            <div className="flex space-x-4 items-center justify-end">
+              <WhatsAppLink />
             </div>
-            <div className="flex space-x-4 items-center justify-end"></div>
           </div>
         </div>
       </div>

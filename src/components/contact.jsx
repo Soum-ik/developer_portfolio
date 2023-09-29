@@ -1,5 +1,6 @@
 import { BiSolidCopyAlt } from "react-icons/bi";
 import { BsSend, BsWhatsapp } from "react-icons/bs";
+import WhatsAppLink from "./Card/whats_Up";
 
 export default function Contact() {
   return (
@@ -13,8 +14,8 @@ export default function Contact() {
           <div className=" flex flex-col md:flex-row md:space-x-9 space-y-3">
             <div className=" flex items-center justify-center">
               <button className="border text-mainColor/50 border-mainColor/25 space-x-4  items-center px-4 py-5 flex rounded-2xl ">
-                <p className=" text-xl">Conversation</p>
-                <BsWhatsapp size={30} />
+                <WhatsAppLink/>
+                {/* <BsWhatsapp size={30} /> */}
               </button>
             </div>
 

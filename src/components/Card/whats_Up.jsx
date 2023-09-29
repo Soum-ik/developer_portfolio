@@ -1,4 +1,5 @@
 import React from "react";
+import { BsWhatsapp } from "react-icons/bs";
 
 const WhatsAppLink = () => {
   const countryCode = "+880"; // Country code for Bangladesh
@@ -10,8 +11,10 @@ const WhatsAppLink = () => {
   )}`;
 
   return (
-    <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-      Open WhatsApp
+    <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex gap-3 items-center justify-end ">
+      Open WhatsApp 
+      <BsWhatsapp size={30} />
+
     </a>
   );
 };
