@@ -16,7 +16,7 @@ export default function Hero() {
           </div>
           <img src={logo} className="md:grow-[2] w-[400px]" alt="" />
           <div className=" grow text-mainColor/50 hidden md:block space-y-2" >
-            <div className="flex space-x-4 items-center justify-end ">
+            <div className="flex space-x-4 items-center justify-end cursor-pointer">
               <p>Here is My CV</p>
               < BsDownload/>
             </div>
