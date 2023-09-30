@@ -1,3 +1,4 @@
+import { BsArrow90DegUp, BsGithub } from "react-icons/bs";
 import Button from "../../buttom/Buttom";
 // import { Contents } from "../Card/card_content";
 import img from "../../img/ss.png";
@@ -11,18 +12,23 @@ export default function Card({ btn1, btn2 }) {
       Title: "Quiz app",
       Dic: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium maxime vitae soluta, iste commodi, debitis saepe doloribus, illum fugiat sit ratione quidem dolorem. Similique explicabo, rem asperiores laudantium accusantium iusto!",
       Image: img,
+      git: "https://github.com/Soum-ik/React_Quiz",
+      live: "https://soum-ikquiz.netlify.app/",
     },
     {
       id: 2,
       Title: "Cuision",
       Dic: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium maxime vitae soluta, iste commodi, debitis saepe doloribus, illum fugiat sit ratione quidem dolorem. Similique explicabo, rem asperiores laudantium accusantium iusto!",
       Image: img1,
+      git: "https://github.com/Soum-ik/soumik-cuisine-res",
+      live: "https://soumik-s-cuision.netlify.app/",
     },
     {
       id: 3,
       Title: "UI Libaray",
       Dic: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium maxime vitae soluta, iste commodi, debitis saepe doloribus, illum fugiat sit ratione quidem dolorem. Similique explicabo, rem asperiores laudantium accusantium iusto!",
       Image: img2,
+      git: "https://github.com/Soum-ik/Soum-ik",
     },
   ];
 
@@ -42,12 +48,26 @@ export default function Card({ btn1, btn2 }) {
             </div>
 
             <div className="">
-              <div className="space-x-3 my-3 text-xs">
-                <Button>{btn1}</Button>
-                <Button >{btn2}</Button>
+              <div className=" my-3 text-xs flex items-center justify-between">
+                <div className=" md:space-x-3 space-y-2">
+                  <Button>{btn1}</Button>
+                  <Button>{btn2}</Button>
+                </div>
+                <div className=" text-mainColor/30 flex items-center space-x-3 text-xl">
+                  <a href={content.git}>
+                    <BsGithub />
+                  </a>
+                  <a href={content.live}>
+                    <BsArrow90DegUp />
+                  </a>
+                </div>
               </div>
               <div>
-                <img className=" rounded-md" src={content.Image} alt="" />
+                <img
+                  className=" rounded-md object-contain"
+                  src={content.Image}
+                  alt=""
+                />
               </div>
             </div>
           </div>

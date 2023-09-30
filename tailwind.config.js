@@ -6,11 +6,14 @@ export default {
       fontFamily: {
         Ralewaye: ["Raleway", "sans-serif"],
       },
-      colors :{
-        bgColor : "#090E16",
+      colors: {
+        bgColor: "#090E16",
         mainColor: "#7B4AE2",
-        whiteColor: "#FFFFFF"
-      }
+        whiteColor: "#FFFFFF",
+      },
+      screens: {
+        moblie: "300px",
+      },
     },
   },
   plugins: [],
