@@ -30,4 +30,21 @@
   .custom_Blur{
     @apply  w-56 rounded-3xl h-56 bg-mainColor/5 filter blur-3xl ;
   }
+
+  .side_in{
+    @apply fixed top-0 left-0 w-full h-screen bg-mainColor/25 origin-bottom;
+  }
+  .side_out{
+    @apply fixed top-0 left-0 w-full h-screen bg-mainColor/25 origin-top;
+  }
+  .progress-bar{
+    @apply  top-0 left-0 right-0 h-10 bg-red-500 origin-top-left
+  }
 }
+/*   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%; */
