@@ -60,7 +60,7 @@ export default function Nav() {
                 <ul className="flex space-x-8">
                   {manus.map((manu) => (
                     <Link
-                      to="#te"
+                      to={manu.link}
                       key={manu.id}
                       className=" first:text-mainColor opacity-50 hover:opacity-100 duration-500 cursor-pointer selection:select-none"
                     >
@@ -91,12 +91,12 @@ export default function Nav() {
           <div
             className={
               isNavOpen
-                ? ` ease-linear duration-700 absolute px-6 w-full h-full top-28 text-2xl overflow-hidden  bg-transparent`
+                ? ` ease-linear duration-700 absolute pb-10left-0 w-80 top-28 text-2xl overflow-hidden text-white/50   z-[1000] `
                 : ` hidden`
             }
           >
-            <div className=" ease-in-out md:hidden duration-700 bg-mainColor w-full z-50">
-              <ul className="flex flex-col space-y-4 mx-6 my-10 ">
+            <div className=" ease-in-out md:hidden duration-700 bg-transparent  backdrop-blur-3xl pb-28 pt-24">
+              <ul className="flex flex-col space-y-4 mx-6 my-10 rounded-2xl">
                 {manus.map((manu) => (
                   <div
                     key={manu.id}

@@ -22,4 +22,4 @@ const Transtion = (OgComponent) => {
   };
 };
 
-export default Transtion;
+export default Transtion
