@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../img/Logo.svg";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 import { AiOutlineAlignRight } from "react-icons/ai";
 import { GrClose } from "react-icons/gr";
@@ -21,27 +22,27 @@ export default function Nav() {
     {
       id: 2,
       name: "About",
-      link: "/about",
+      link: "#about",
     },
     {
       id: 3,
       name: "Skill",
-      link: "/skill",
+      link: "#skill",
     },
     {
       id: 4,
       name: "Projects",
-      link: "/projects",
+      link: "#projects",
     },
     {
       id: 5,
       name: "Resume",
-      link: "/resume",
+      link: "#resume",
     },
     {
       id: 6,
       name: "Contact",
-      link: "/contact",
+      link: "#contact",
     },
   ];
 
@@ -59,13 +60,14 @@ export default function Nav() {
               <div className=" hidden md:block">
                 <ul className="flex space-x-8">
                   {manus.map((manu) => (
-                    <Link
+                    <HashLink
                       to={manu.link}
                       key={manu.id}
+                      smooth
                       className=" first:text-mainColor opacity-50 hover:opacity-100 duration-500 cursor-pointer selection:select-none"
                     >
                       <li className="">{manu.name}</li>
-                    </Link>
+                    </HashLink>
                   ))}
                 </ul>
               </div>
@@ -87,28 +89,30 @@ export default function Nav() {
           </div>
         </nav>
       </div>
-        {
-          <div
-            className={
-              isNavOpen
-                ? ` ease-linear duration-700 absolute pb-10left-0 w-80 top-28 text-2xl overflow-hidden text-white/50   z-[1000] `
-                : ` hidden`
-            }
-          >
-            <div className=" ease-in-out md:hidden duration-700 bg-transparent  backdrop-blur-3xl pb-28 pt-24">
-              <ul className="flex flex-col space-y-4 mx-6 my-10 rounded-2xl">
-                {manus.map((manu) => (
-                  <div
-                    key={manu.id}
-                    className=" first:text-white opacaity-100  hover:opacity-100 duration-500 cursor-pointer selection:select-none"
-                  >
-                    <li className="">{manu.name}</li> 
-                  </div>
-                ))}
-              </ul>
-            </div>
+      {
+        <div
+          className={
+            isNavOpen
+              ? ` ease-linear duration-700 absolute pb-10left-0 w-80 top-28 text-2xl overflow-hidden text-white/50   z-[1000] `
+              : ` hidden`
+          }
+        >
+          <div className=" ease-in-out md:hidden duration-700 bg-transparent  backdrop-blur-3xl pb-28 pt-24">
+            <ul className="flex flex-col space-y-4 mx-6 my-10 rounded-2xl">
+              {manus.map((manu) => (
+                <HashLink
+                  smooth
+                  key={manu.id}
+                  to={manu.link}
+                  className=" first:text-white opacaity-100  hover:opacity-100 duration-500 cursor-pointer selection:select-none"
+                >
+                  <li className="">{manu.name}</li>
+                </HashLink>
+              ))}
+            </ul>
           </div>
-        }
+        </div>
+      }
     </>
   );
 }

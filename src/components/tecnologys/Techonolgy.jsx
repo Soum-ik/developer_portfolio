@@ -13,7 +13,7 @@ import { SiNetlify } from "react-icons/si";
 
 export default function Technology() {
   return (
-    <div className=" container text-white max-w-4xl" id="te">
+    <div className=" container text-white max-w-4xl" id="skill">
       <div className=" -left-[300px] -bottom-5  absolute custom_Blur"></div>
       <div className="section space-y-14">
         <div className=" flex flex-col space-y-12">
