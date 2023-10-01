@@ -4,7 +4,7 @@ import WhatsAppLink from "./Card/whats_Up";
 
 export default function Contact() {
   return (
-    <div className=" container  pt-5 md:px-7 md:py-10 pb-10 text-white">
+    <div className=" container  pt-5 md:px-7 md:py-10 pb-10 text-white" id="contact">
       <div className=" px-8 py-7 section">
         <div className=" flex items-center justify-center flex-col px-4 space-y-10">
           <div className=" items-center flex flex-col space-y-3">
