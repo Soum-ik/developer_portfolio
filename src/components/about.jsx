@@ -12,7 +12,7 @@ export default function About() {
           <p className="sing">🧐 About me</p>
           <div className=" bg-mainColor/10 filter sm:w-[200px] sm:h-[300px] blur-3xl right-3 top-3 absolute"></div>
           <h1 className="Tittle">Soumik Sarkar</h1>
-          <p className=" text-white opacity-50 ">
+          <p className=" text-white opacity-50 line-clamp-5 hover:line-clamp-none duration-1000 ease-in">
             Hi,I am Soumik. I am an experienced Fontend web developer. I have
             worked in multiple technologies to build websites and web
             applications.For me as professional web developer, learning new

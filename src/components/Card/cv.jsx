@@ -11,7 +11,7 @@ const MyCV = () => {
       >
         {/* <di> */}
         <h1>My CV</h1>
-        <BsDownload size={30} />
+        <BsDownload size={20} />
         {/* </di/v> */}
       </a>
     </div>

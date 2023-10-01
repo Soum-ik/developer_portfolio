@@ -4,7 +4,14 @@ import WhatsAppLink from "./Card/whats_Up";
 
 export default function Contact() {
   return (
-    <div className=" container  pt-5 md:px-7 md:py-10 pb-10 text-white" id="contact">
+    <div
+      className=" container  pt-5 md:px-7 md:py-10 pb-10 text-white"
+      id="contact"
+    >
+      <div className=" top-52 right-60 filter  blur-3xl   absolute rounded-full  w-52 h-52 bg-mainColor/10  opacity-30"></div>
+      <div className=" buttom-52 left-52 filter  blur-3xl   absolute rounded-full  w-52 h-52 bg-mainColor/30 opacity-20"></div>
+      <div className=" top-52 left-56 filter  blur-3xl   absolute  rounded-full w-52 h-52 bg-mainColor/20 opacity-40"></div>
+
       <div className=" px-8 py-7 section">
         <div className=" flex items-center justify-center flex-col px-4 space-y-10">
           <div className=" items-center flex flex-col space-y-3">
@@ -14,7 +21,7 @@ export default function Contact() {
           <div className=" flex flex-col md:flex-row md:space-x-9 space-y-3">
             <div className=" flex items-center justify-center">
               <button className="border text-mainColor/50 border-mainColor/25 space-x-4  items-center px-4 py-5 flex rounded-2xl ">
-                <WhatsAppLink/>
+                <WhatsAppLink />
                 {/* <BsWhatsapp size={30} /> */}
               </button>
             </div>

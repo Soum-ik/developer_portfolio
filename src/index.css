@@ -28,7 +28,7 @@
     @apply grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 md:space-y-0  gap-8
   }
   .custom_Blur{
-    @apply  w-56 rounded-3xl h-56 bg-mainColor/5 filter blur-3xl ;
+    @apply  w-56 rounded-3xl h-56 bg-mainColor/5 mix-blend-multiply filter blur-3xl ;
   }
 
   .side_in{
