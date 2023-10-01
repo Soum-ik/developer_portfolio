@@ -13,7 +13,7 @@ const WhatsAppLink = () => {
   return (
     <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="flex gap-3 items-center justify-end ">
       Open WhatsApp 
-      <BsWhatsapp size={30} />
+      <BsWhatsapp size={20} />
 
     </a>
   );

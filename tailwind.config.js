@@ -14,6 +14,16 @@ export default {
       screens: {
         moblie: "300px",
       },
+      animation :{
+        blob : "blob 7s infinite"
+      }, 
+      // keyframes : {
+      //   blob : {
+      //     "0%" {
+      //       transform : "translate"
+      //     }
+      //   }
+      // }
     },
   },
   plugins: [],
