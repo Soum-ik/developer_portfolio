@@ -5,8 +5,8 @@ import Moblie_item from "./moblie-nav/moblie";
 
 const Hero = () => {
   return (
-    <div className="mx-10 pt-20">
-      <div className="container">
+    <div className="md:mx-10 pt-20">
+      <div className=" sm:container">
         <div className="flex flex-col-reverse md:flex-row text-white items-center ">
           <div className=" grow flex flex-col max-w-sm">
             <h1 className="sing">Hello</h1>

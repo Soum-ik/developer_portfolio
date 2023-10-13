@@ -17,14 +17,19 @@ export default {
       animation :{
         blob : "blob 7s infinite"
       }, 
-      // keyframes : {
-      //   blob : {
-      //     "0%" {
-      //       transform : "translate"
-      //     }
-      //   }
-      // }
+
     },
   },
   plugins: [],
 };
+
+// animation: spin 1s linear infinite;
+
+// @keyframes spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }

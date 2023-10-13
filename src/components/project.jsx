@@ -25,7 +25,7 @@ const Project= () => {
           </div> */}
         </div>
 
-        <div className=" px-5 ">
+        <div className=" sm:px-5 ">
           <Card btn1="React" btn2="Tailwindcss" />
         </div>
       </div>

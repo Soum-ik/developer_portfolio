@@ -4,6 +4,8 @@ import Button from "../../buttom/Buttom";
 import img from "../../img/ss.png";
 import img1 from "../../img/ss1.png";
 import img2 from "../../img/ss3.png";
+import img3 from "../../img/morden.png";
+
 
 export default function Card({ btn1, btn2 }) {
   const Contents = [
@@ -30,6 +32,14 @@ export default function Card({ btn1, btn2 }) {
       Image: img2,
       git: "https://github.com/Soum-ik/Soum-ik",
     },
+    {
+      id: 4,
+      Title: "Morden UI",
+      Dic: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium maxime vitae soluta, iste commodi, debitis saepe doloribus, illum fugiat sit ratione quidem dolorem. Similique explicabo, rem asperiores laudantium accusantium iusto!",
+      Image: img3,
+      live: "https://morden-ui.vercel.app/",
+      git: "https://github.com/Soum-ik/result_Finder-",
+    },
   ];
 
   return (
@@ -38,7 +48,7 @@ export default function Card({ btn1, btn2 }) {
         {Contents.map((content) => (
           <div
             key={content.id}
-            className="border border-mainColor space-y-5 px-5 py-6 rounded-xl md:space-y-12"
+            className="border border-mainColor space-y-5 px-3 sm:px-5 py-6 rounded-xl md:space-y-12"
           >
             <div className="space-y-2">
               <h1 className="text-white/80 md:text-xl text-base ">
@@ -48,23 +58,24 @@ export default function Card({ btn1, btn2 }) {
             </div>
 
             <div className="">
-              <div className=" my-3 text-xs flex items-center justify-between">
-                <div className=" md:space-x-3 space-y-2">
+              <div className=" my-3 text-xs flex items-center flex-col sm:flex-row justify-between sm:gap-0 gap-3">
+                {/* some cahnge */}
+                <div className="space-x-3 space-y-2 flex-1 ">
                   <Button>{btn1}</Button>
                   <Button>{btn2}</Button>
                 </div>
                 <div className=" text-mainColor/30 flex items-center space-x-3 text-xl">
-                  <a href={content.git}>
+                  <a href={content.git} target="_blank">
                     <BsGithub />
                   </a>
-                  <a href={content.live}>
+                  <a href={content.live} target="_blank">
                     <BsArrow90DegUp />
                   </a>
                 </div>
               </div>
               <div>
                 <img
-                  className=" rounded-md object-contain"
+                  className=" rounded-md aspect-video object-cover"
                   src={content.Image}
                   alt=""
                 />

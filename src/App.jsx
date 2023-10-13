@@ -11,7 +11,7 @@ export default function App() {
     setLoading(true);
     setInterval(() => {
       setLoading(false);
-    }, 8000);
+    }, 3000);
   }, []);
 
   return (

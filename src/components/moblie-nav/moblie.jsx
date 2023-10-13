@@ -1,6 +1,6 @@
 import { BsFacebook, BsGithub } from "react-icons/bs";
 import { FaInstagram } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 export default function Moblie_item() {
 

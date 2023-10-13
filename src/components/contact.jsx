@@ -9,8 +9,8 @@ export default function Contact() {
       id="contact"
     >
       <div className=" top-52 right-60 filter  blur-3xl   absolute rounded-full  w-52 h-52 bg-mainColor/10  opacity-30"></div>
-      <div className=" buttom-52 left-52 filter  blur-3xl   absolute rounded-full  w-52 h-52 bg-mainColor/30 opacity-20"></div>
-      <div className=" top-52 left-56 filter  blur-3xl   absolute  rounded-full w-52 h-52 bg-mainColor/20 opacity-40"></div>
+      <div className=" buttom-52 md:left-52 filter  blur-3xl   absolute rounded-full  w-52 h-52 bg-mainColor/30 opacity-20"></div>
+      <div className=" top-52  md:left-56 filter  blur-3xl   absolute  rounded-full w-52 h-52 bg-mainColor/20 opacity-40"></div>
 
       <div className=" px-8 py-7 section">
         <div className=" flex items-center justify-center flex-col px-4 space-y-10">
