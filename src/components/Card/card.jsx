@@ -7,6 +7,7 @@ import img2 from "../../img/ss3.png";
 import img3 from "../../img/morden.png";
 import img4 from "../../img/resume.png";
 import img5 from "../../img/img5.png";
+// eslint-disable-next-line react/prop-types
 export default function Card({ btn1, btn2 }) {
   const Contents = [
     {
