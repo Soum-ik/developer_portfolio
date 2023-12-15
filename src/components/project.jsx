@@ -1,7 +1,6 @@
 import { AiOutlineLink } from "react-icons/ai";
 import Card from "../components/Card/card";
-import Button from "../buttom/Buttom";
-import Transtion from "./motion/motion";
+
 
 const Project= () => {
   return (
@@ -18,11 +17,7 @@ const Project= () => {
           <div>
             <p className="Tittle first-letter:odd:text-mainColor">Project</p>
           </div>
-          {/* <div className=" md:space-x-4 flex-wrap md:hidden">
-            <Button children="UI DEGINER" />
-            <Button bg="color"  children="API" />
-            <Button children="SERVER" />
-          </div> */}
+          
         </div>
 
         <div className=" sm:px-5 ">

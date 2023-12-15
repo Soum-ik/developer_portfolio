@@ -9,7 +9,13 @@ import {
   FaJs,
   FaReact,
 } from "react-icons/fa";
-import { SiNetlify } from "react-icons/si";
+import {
+  SiNetlify,
+  SiNextdotjs,
+  SiNotion,
+  SiRedux,
+  SiVercel,
+} from "react-icons/si";
 
 export default function Technology() {
   return (
@@ -23,20 +29,21 @@ export default function Technology() {
           </div>
           {/* <div className=" top-0 right-0 absolute custom_Blur"></div> */}
           <div className=" -bottom-4 right-2 absolute custom_Blur"></div>
-          <div className=" flex items-center justify-center flex-col space-y-5 overflow-x-hidden ">
+          <div className=" flex items-center justify-center flex-col space-y-5 ">
             <p className=" text-white/50 font-medium">
               Techs I use regulary for my project..
             </p>
             <div className=" flex space-x-8 md:text-5xl text-4xl  text-mainColor/50 ">
-              <FaFigma className=" hover:shadow-xl shadow-white" />
               <FaHtml5 className=" hover:shadow-xl shadow-white" />
               <FaCss3 className=" hover:shadow-xl shadow-white" />
+              <FaFigma className=" hover:shadow-xl shadow-white" />
               <FaJs className=" hover:shadow-xl shadow-white" />
               <FaReact className=" hover:shadow-xl shadow-white" />
               <FaFire className=" hover:shadow-xl shadow-white" />
               <FaGit className=" hover:shadow-xl shadow-white" />
               <FaGithub className=" hover:shadow-xl shadow-white" />
               <SiNetlify className=" hover:shadow-xl shadow-white " />
+            
             </div>
           </div>
 

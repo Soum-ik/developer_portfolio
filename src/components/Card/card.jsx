@@ -6,6 +6,7 @@ import img1 from "../../img/ss1.png";
 import img2 from "../../img/ss3.png";
 import img3 from "../../img/morden.png";
 import img4 from "../../img/resume.png";
+import img5 from "../../img/img5.png";
 export default function Card({ btn1, btn2 }) {
   const Contents = [
     {
@@ -47,6 +48,14 @@ export default function Card({ btn1, btn2 }) {
       live: "https://resume-builder-soum-ik.vercel.app/",
       git: "https://github.com/Soum-ik/Resume_Builder/",
     },
+    {
+      id: 6,
+      Title: "Netflix Clone",
+      Dic: " 🚀 Dive into the magic of my Netflix clone, crafted with love using React.js, tailwind CSS, and powered by the epic TMDB API. 🍿💻 Check out the binge-worthy experience now! 🌟 If you're feeling the excitement, show some love by giving it a star on GitHub. Let's celebrate the thrill of DIY streaming! 🌈🚀",
+      Image: img5,
+      live: "https://netflixwebsiteclone.vercel.app/",
+      git: "https://github.com/Soum-ik/InnovixionTech-Dec1-",
+    },
   ];
 
   return (
@@ -72,10 +81,10 @@ export default function Card({ btn1, btn2 }) {
                   <Button>{btn2}</Button>
                 </div>
                 <div className=" text-mainColor/30 flex items-center space-x-3 text-2xl">
-                  <a href={content.git} target="_blank">
+                  <a href={content.git} target="_blank" rel="noreferrer">
                     <BsGithub />
                   </a>
-                  <a href={content.live} target="_blank">
+                  <a href={content.live} target="_blank" rel="noreferrer">
                     <BsArrow90DegUp />
                   </a>
                 </div>
