@@ -29,7 +29,7 @@ export default function Technology() {
           </div>
           {/* <div className=" top-0 right-0 absolute custom_Blur"></div> */}
           <div className=" -bottom-4 right-2 absolute custom_Blur"></div>
-          <div className=" flex items-center justify-center flex-col space-y-5 ">
+          <div className=" flex items-center justify-center flex-col space-y-5 overflow-x-hidden">
             <p className=" text-white/50 font-medium">
               Techs I use regulary for my project..
             </p>
@@ -53,7 +53,7 @@ export default function Technology() {
           <div className=" bottom-78 left-0 absolute custom_Blur"></div>
           <div className=" flex items-center justify-center flex-col space-y-5 overflow-hidden">
             <p className=" text-white/50 font-medium">
-              Favorite and most of the time.
+              Favorite and most of the time..
             </p>
             {/* <div className=" "> */}
             <div className=" flex space-x-8 md:text-5xl text-4xl text-mainColor/50 ">

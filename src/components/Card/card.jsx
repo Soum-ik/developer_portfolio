@@ -64,7 +64,7 @@ export default function Card({ btn1, btn2 }) {
         {Contents.map((content) => (
           <div
             key={content.id}
-            className="border border-mainColor space-y-5 px-3 sm:px-5 py-6 rounded-xl md:space-y-12"
+            className="border border-mainColor/25 space-y-5 px-3 sm:px-5 py-6 rounded-xl md:space-y-12 bg-mainColor/5"
           >
             <div className="space-y-2">
               <h1 className="text-white/80 md:text-xl text-base ">
