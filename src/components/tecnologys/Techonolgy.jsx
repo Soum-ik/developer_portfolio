@@ -43,7 +43,10 @@ export default function Technology() {
               <FaGit className=" hover:shadow-xl shadow-white" />
               <FaGithub className=" hover:shadow-xl shadow-white" />
               <SiNetlify className=" hover:shadow-xl shadow-white " />
-            
+              <SiNextdotjs className=" hover:shadow-xl shadow-white " />
+              <SiVercel className=" hover:shadow-xl shadow-white " />
+              <SiNotion className=" hover:shadow-xl shadow-white " />
+              <SiRedux className=" hover:shadow-xl shadow-white " />
             </div>
           </div>
 
